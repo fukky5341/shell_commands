@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "CitHub : open"
+open "https://github.com/"
