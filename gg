@@ -1,0 +1,11 @@
+#!/bin/sh
+if [ $# != 0 ]; then
+    echo "searching for : $@"
+    for term in $@ ; do
+        search="$search%20$term"
+    done
+    open "http://www.google.com/search?q=$search"
+else
+    echo "Google Chrome : open"
+    open "http://www.google.com"
+fi
